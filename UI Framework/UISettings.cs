@@ -34,6 +34,7 @@ namespace deVoid.UIFramework
                     var screenController = screenInstance.GetComponent<IUIScreenController>();
 
                     if (screenController != null) {
+                        screenController.uiFrame = newUI;
                         newUI.RegisterScreen(screen.name, screenController, screenInstance.transform);
                         if (deactivateScreenGOs && screenInstance.activeSelf) {
                             screenInstance.SetActive(false);

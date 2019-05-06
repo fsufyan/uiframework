@@ -7,6 +7,7 @@ namespace deVoid.UIFramework {
     public interface IUIScreenController {
         string ScreenId { get; set; }
         bool IsVisible { get; }
+        UIFrame uiFrame { get; set; }
 
         void Show(IScreenProperties props = null);
         void Hide(bool animate = true);

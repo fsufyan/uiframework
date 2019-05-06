@@ -78,6 +78,8 @@ namespace deVoid.UIFramework
         /// <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
         public bool IsVisible { get; private set; }
 
+        public UIFrame uiFrame { get; set; }
+
         /// <summary>
         /// The properties of this screen. Can contain
         /// serialized values, or passed in private values.
