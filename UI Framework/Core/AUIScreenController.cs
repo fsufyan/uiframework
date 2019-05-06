@@ -165,6 +165,7 @@ namespace deVoid.UIFramework
         {
             DoAnimation(animate ? animOut : null, OnTransitionOutFinished, false);
             WhileHiding();
+            OnHide();
         }
 
         /// <summary>
@@ -203,6 +204,16 @@ namespace deVoid.UIFramework
             }
         }
 
+        public virtual void OnShow()
+        {
+
+        }
+
+        public virtual void OnHide()
+        {
+
+        }
+
         private void DoAnimation(ATransitionComponent caller, Action callWhenFinished, bool isVisible)
         {
             if (caller == null)
@@ -227,6 +238,7 @@ namespace deVoid.UIFramework
         private void OnTransitionInFinished()
         {
             IsVisible = true;
+            OnShow();
 
             if (InTransitionFinished != null)
             {
