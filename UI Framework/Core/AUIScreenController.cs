@@ -9,9 +9,12 @@ namespace deVoid.UIFramework
     /// <seealso cref="AWindowController"/>
     /// <seealso cref="APanelController"/>
     /// </summary>
+    [RequireComponent(typeof(CanvasGroup))]
     public abstract class AUIScreenController<TProps> : MonoBehaviour, IUIScreenController
         where TProps : IScreenProperties
     {
+        protected CanvasGroup canvasGroup;
+
         [Header("Screen Animations")] 
         [Tooltip("Animation that shows the screen")] 
         [SerializeField]
@@ -94,6 +97,7 @@ namespace deVoid.UIFramework
         protected virtual void Awake()
         {
             AddListeners();
+            canvasGroup = GetComponent<CanvasGroup>();
         }
 
         protected virtual void OnDestroy()
