@@ -8,7 +8,7 @@ namespace UIFramework
     /// be instanced and registered upon instantiating a new UI Frame.
     /// </summary>
     
-    [CreateAssetMenu(fileName = "UISettings", menuName = "deVoid UI/UI Settings")]
+    [CreateAssetMenu(fileName = "UISettings", menuName = "UI Settings")]
     public class UISettings : ScriptableObject
     {
         [Tooltip("Prefab for the UI Frame structure itself")]

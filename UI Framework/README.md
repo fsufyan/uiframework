@@ -1,4 +1,4 @@
-# deVoid UI Framework
+# UI Framework
 ![Example Project](https://img.itch.zone/aW1nLzE5NTQzODYuZ2lm/original/%2BrlumK.gif)
 
 *You can see a live demo of the [the examples repo](https://github.com/yankooliveira/uiframework_examples) at my [itch.io page](https://yanko.itch.io/devui)*
@@ -7,7 +7,7 @@
 *Step 1:*
 
 Right click on project view
-`Create -> deVoid UI -> UIFrame Prefab`
+`Create -> UIFrame Prefab`
 then drag the Prefab onto your scene
 
 *Step 2:*
@@ -32,7 +32,7 @@ uiFrame.ShowPanel("YourPanelId", yourPanelProperties);
 
 *Step 4:*
 Now that you're familiar with the API, right click on project view
-`Create -> deVoid UI -> UI Settings`
+`Create -> UI Settings`
 
 Rig your UI Frame prefab as the UI Template, drag all your screens in the Screens To Register list and simply do
 
@@ -45,7 +45,7 @@ Which will give you a new UI Frame instance and automatically do *Step 2* for yo
 Make sure to check out [the examples repo](https://github.com/yankooliveira/uiframework_examples) and read [the manual](https://github.com/yankooliveira/uiframework/blob/master/MANUAL.md)!
 
 ## What?
-The *deVoid UI Framework* (or **devUI** for short) is a simple architecture for UI handling and navigation in Unity. It enforces one simple rule: *you can **never** directly access the internals of your UI code from external code*, but anything else is fair game. You want to read data from Singletons from inside your UI? Sure. You want to sandwich mediators, views and controllers and do MVC by the book? Go for it. You want to skip the data passing functionalities and use your own MVVM framework? Power to you. Do whatever floats your boat and works best for your needs.
+The *UI Framework* (or **devUI** for short) is a simple architecture for UI handling and navigation in Unity. It enforces one simple rule: *you can **never** directly access the internals of your UI code from external code*, but anything else is fair game. You want to read data from Singletons from inside your UI? Sure. You want to sandwich mediators, views and controllers and do MVC by the book? Go for it. You want to skip the data passing functionalities and use your own MVVM framework? Power to you. Do whatever floats your boat and works best for your needs.
 
 ## Why?
 Having worked with mobile F2P games for years, I've done my fair share of UI. And I *hate* doing UI. 
