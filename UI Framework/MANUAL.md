@@ -1,4 +1,4 @@
-# deVoid UI Framework: Manual
+# UI Framework: Manual
 ## Part 1: Structure
 The main entry point in the system is the ***UI Frame***. It is the way you interact with the framework from your code. Internally, it serves as a facade to the ***UI Layers***. Layers are responsible for containing and handling ***Screens***. Screens can be of two types:
 * ***Panels*** are ad-hoc pieces of UI that are not bound to a specific history and can be visible and interactable at the same time. Eg: a HUD could be a *Panel*.
